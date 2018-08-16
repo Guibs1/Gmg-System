@@ -1,0 +1,21 @@
+/*
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ */
+package br.com.gestaodeestoque.Models;
+
+import br.com.gestaodeestoque.Views.FrmTelaInicial;
+
+/**
+ *
+ * @author Guibs
+ */
+public class BotoesModelo {
+    
+    public void botaoVoltar()
+    {
+
+    }
+    
+}
