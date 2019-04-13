@@ -16,7 +16,7 @@ public class ConnectionFactory {
 
         try {
             
-            return DriverManager.getConnection("jdbc:mysql://localhost/bd_estoque","root", "root");
+            return DriverManager.getConnection("jdbc:mysql://localhost/BD_TESTE","root", "");
         } catch (SQLException erro) {
 
             throw new RuntimeException(erro);

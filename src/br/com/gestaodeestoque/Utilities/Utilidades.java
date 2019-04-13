@@ -5,8 +5,13 @@
  */
 package br.com.gestaodeestoque.Utilities;
 
+import java.awt.Image;
+import java.awt.Toolkit;
 import java.io.IOException;
+import java.net.URL;
 import java.util.Date;
+import javax.swing.JComponent;
+import javax.swing.JFrame;
 import javax.swing.JOptionPane;
 
 /**
@@ -22,13 +27,27 @@ public class Utilidades {
         }
     }
     public static void abrirCalculadora(){
-    try {  
-    Runtime.getRuntime().exec("calc");  
-    }  
-    catch (IOException exc) {  
-    exc.printStackTrace(); 
-    JOptionPane.showMessageDialog(null, "Ops, ocorreu um erro ao abrir a Calculadora!");
-    }  
+        try {  
+            Runtime.getRuntime().exec("calc");  
+        } catch (IOException exc) {  
+            exc.printStackTrace(); 
+            JOptionPane.showMessageDialog(null, "Ops, ocorreu um erro ao abrir a Calculadora!");
+        }  
+    }
+    
+    public static void setIcon(JFrame tela){
+        URL url = tela.getClass().getResource("/imagesteste/logo controle de estoque.png");  
+        Image iconeTitulo = Toolkit.getDefaultToolkit().getImage(url);
+        tela.setIconImage(iconeTitulo);
+    }
+    
+    public static void loginAutomatico(boolean debug){
+        
+    }
+    
+    public static void setInvisible(JComponent itens){
+        itens.setVisible(false);
+        
     }
     /*public static void limparCampos(){
     foreach()

@@ -4,7 +4,7 @@ package br.com.gestaodeestoque.dao;
 import javax.swing.JOptionPane;
 
 public class TestaConexao {
-     /*public static void main(String[] args) {
+     public static void main(String[] args) {
         
         JOptionPane.showMessageDialog(null,
                 "Iniciando teste");
@@ -19,5 +19,5 @@ public class TestaConexao {
         }
         
         
-    }*/
+    }
 }

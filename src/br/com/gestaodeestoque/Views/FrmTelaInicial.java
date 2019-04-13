@@ -28,10 +28,7 @@ public class FrmTelaInicial extends javax.swing.JFrame {
         initComponents();
         this.funcionariomodeloo = funcionariomodeloo;
         this.setUndecorated(true); 
-        
-        URL url = this.getClass().getResource("/imagesteste/logo controle de estoque.png");  
-        Image iconeTitulo = Toolkit.getDefaultToolkit().getImage(url);
-        this.setIconImage(iconeTitulo);
+        Utilidades.setIcon(FrmTelaInicial.this);
     }
 
     @SuppressWarnings("unchecked")
@@ -123,7 +120,7 @@ public class FrmTelaInicial extends javax.swing.JFrame {
             jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel6Layout.createSequentialGroup()
                 .addContainerGap()
-                .addComponent(lblStatusData5, javax.swing.GroupLayout.PREFERRED_SIZE, 70, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(lblStatusData5, javax.swing.GroupLayout.PREFERRED_SIZE, 117, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(jLabel14, javax.swing.GroupLayout.PREFERRED_SIZE, 10, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
@@ -132,7 +129,7 @@ public class FrmTelaInicial extends javax.swing.JFrame {
                 .addComponent(jLabel15)
                 .addGap(3, 3, 3)
                 .addComponent(lblStatusUsuario5, javax.swing.GroupLayout.PREFERRED_SIZE, 150, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(1248, Short.MAX_VALUE))
+                .addContainerGap(1204, Short.MAX_VALUE))
         );
         jPanel6Layout.setVerticalGroup(
             jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -147,8 +144,6 @@ public class FrmTelaInicial extends javax.swing.JFrame {
                     .addComponent(lblStatusData5, javax.swing.GroupLayout.PREFERRED_SIZE, 42, javax.swing.GroupLayout.PREFERRED_SIZE)))
         );
 
-        Desktop6.setLayer(jPanel6, javax.swing.JLayeredPane.DEFAULT_LAYER);
-
         javax.swing.GroupLayout Desktop6Layout = new javax.swing.GroupLayout(Desktop6);
         Desktop6.setLayout(Desktop6Layout);
         Desktop6Layout.setHorizontalGroup(
@@ -161,6 +156,7 @@ public class FrmTelaInicial extends javax.swing.JFrame {
                 .addContainerGap(806, Short.MAX_VALUE)
                 .addComponent(jPanel6, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE))
         );
+        Desktop6.setLayer(jPanel6, javax.swing.JLayeredPane.DEFAULT_LAYER);
 
         jMenuBar1.setBackground(new java.awt.Color(255, 255, 255));
 

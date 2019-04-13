@@ -30,10 +30,7 @@ public class FrmLogin extends javax.swing.JFrame {
         ProgressBar.setVisible(false);
         lblIni.setVisible(false);
         lblIni1.setVisible(false);
-
-                URL url = this.getClass().getResource("/imagesteste/logo controle de estoque.png");  
-        Image iconeTitulo = Toolkit.getDefaultToolkit().getImage(url);
-        this.setIconImage(iconeTitulo);
+        Utilidades.setIcon(FrmLogin.this);
     }
 
     /**
@@ -182,7 +179,7 @@ public class FrmLogin extends javax.swing.JFrame {
         } else {
 
             FuncionarioDAO dao = new FuncionarioDAO();
-            if (dao.efetuarLogin(txtLogin.getText(), txtSenha.getText()) == true) {
+            if (dao.efetuarLogin(txtLogin.getText(), txtSenha.getText()) == true ) {
                 
                 ProgressBar.setVisible(true);
                 lblIni.setVisible(true);
@@ -213,8 +210,7 @@ public class FrmLogin extends javax.swing.JFrame {
 //                dao1.lembrarLogin(txtLogin.getText());
 //                }
             } else {     
-            JOptionPane.showMessageDialog(null, "Senha ou Login incorretos!");
-
+                JOptionPane.showMessageDialog(null, "Senha ou Login incorretos!");
             }  
         }
     }//GEN-LAST:event_btnEntrarActionPerformed

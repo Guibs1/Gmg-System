@@ -423,7 +423,7 @@
               <Group type="103" groupAlignment="0" attributes="0">
                   <Group type="102" alignment="0" attributes="0">
                       <EmptySpace max="-2" attributes="0"/>
-                      <Component id="lblStatusData5" min="-2" pref="70" max="-2" attributes="0"/>
+                      <Component id="lblStatusData5" min="-2" pref="117" max="-2" attributes="0"/>
                       <EmptySpace max="-2" attributes="0"/>
                       <Component id="jLabel14" min="-2" pref="10" max="-2" attributes="0"/>
                       <EmptySpace max="-2" attributes="0"/>
@@ -432,7 +432,7 @@
                       <Component id="jLabel15" min="-2" max="-2" attributes="0"/>
                       <EmptySpace min="-2" pref="3" max="-2" attributes="0"/>
                       <Component id="lblStatusUsuario5" min="-2" pref="150" max="-2" attributes="0"/>
-                      <EmptySpace pref="1248" max="32767" attributes="0"/>
+                      <EmptySpace pref="1204" max="32767" attributes="0"/>
                   </Group>
               </Group>
             </DimensionLayout>

@@ -1,10 +1,10 @@
-#CREATE DATABASE BD_TESTE;
-#USE BD_TESTE;
+CREATE DATABASE BD_TESTE;
+USE BD_TESTE;
 
 
-DELIMITER ;;
-CREATE  PROCEDURE `pr_DEUS`()
-Begin
+#DELIMITER ;;
+#CREATE  PROCEDURE `pr_DEUS`()
+#Begin
 
 CREATE TABLE `tb_categoria` (
   `categoria_id` int(11) NOT NULL AUTO_INCREMENT,
@@ -318,5 +318,5 @@ BEGIN
     UPDATE tb_estoque_produto SET tb_estoque_produto.estoque_qtd  =  tb_estoque_produto.estoque_qtd 
     + OLD.item_pedido_qtd
 WHERE tb_estoque_produto.produto_id = OLD.produto_id;
-END ;;
-DELIMITER ;
+#END ;;
+#DELIMITER ;
